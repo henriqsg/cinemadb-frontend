@@ -1,0 +1,1 @@
+ReactDOM.render(<searchBar />, document.getElementById('search_bar'));
