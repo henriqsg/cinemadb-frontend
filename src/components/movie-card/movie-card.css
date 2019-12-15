@@ -10,7 +10,13 @@
     text-align: justify;
 }
 
-img.list-image {
+.MovieCard a, .MovieCard a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+.MovieCard img.list-image {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
