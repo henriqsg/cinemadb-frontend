@@ -5,7 +5,7 @@ import {
 
 function MovieCard(props) {
   return (
-    <div className="MovieCard col-xs-12 col-md-4 mb-5">
+    <div className="MovieCard col-12 col-md-4 mb-5">
       <NavLink to={props.detailUrl} >
         <img className="mw-100 mb-3"
           src={props.img}
