@@ -3,7 +3,11 @@
 }
 
 .MovieCard span {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.MovieCard .overview {
+    text-align: justify;
 }
 
 img.list-image {

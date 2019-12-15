@@ -16,7 +16,9 @@ function MovieCard(props) {
       
       <img className="list-image mw-100 mb-3" src={'http://image.tmdb.org/t/p/w780' + props.imgUrl}/>
       <h3>{props.title}</h3>
-      <span>{props.overview}</span>
+      <div className="overview">
+        <span>{props.overview}</span>
+      </div>
     </div>
   );
 }
