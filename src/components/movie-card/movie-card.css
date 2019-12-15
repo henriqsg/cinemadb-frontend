@@ -1,3 +1,7 @@
+.MovieCard {
+    padding: 2rem;
+}
+
 .MovieCard span {
     font-size: 14px;
 }

@@ -6,15 +6,14 @@ import {
 } from "react-router-dom";
 import List from "./routes/list/List";
 import Detail from "./routes/detail/Detail";
+import './Main.css';
  
 class Main extends Component {
   render() {
     return (
         <HashRouter>
-            <header className="Main-header">
-                <h1 className="mb-5">
-                    Filmes.React - Diversão Garantida
-                </h1>
+            <header className="mainHeader my-5 text-center">
+                <h1>Filmes.React - Diversão Garantida</h1>
             </header>
             <div className="content">
               <Route exact path="/" component={List}/>
