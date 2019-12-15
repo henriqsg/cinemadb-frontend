@@ -1,3 +1,9 @@
-.search-bar {
-    
+.searchBar {
+    text-align: center;
+}
+
+.searchBar input{
+    width: 85%;
+    height: 3rem;
+    border-radius: 2rem;
 }
