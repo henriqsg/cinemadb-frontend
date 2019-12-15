@@ -12,9 +12,8 @@ function MovieCard(props) {
           alt={props.title}
         />
       </NavLink> */}
-      <div className="container">
-        <img className="mw-100 mb-3" src={'http://image.tmdb.org/t/p/w780' + props.imgUrl}/>
-      </div>
+      
+      <img className="mw-100 mb-3" src={'http://image.tmdb.org/t/p/w780' + props.imgUrl}/>
       <h3>{props.title}</h3>
       <span>{props.overview}</span>
     </div>
