@@ -1,5 +1,5 @@
 import React from 'react';
-import MovieCard from './components/movie-card/movie-card.js';
+import MovieCard from '../movie-card/movie-card.js';
 
 export default class MovieList extends React.Component {
     
@@ -13,9 +13,12 @@ export default class MovieList extends React.Component {
     componentDidMount() {
         return fetch('https://api.themoviedb.org/3/movie/popular/?api_key=19dd866ef4c517ef4d726559bd269cb0')
             .then((response) => response.json())
-            .then((responseJson) => {
-                let parseMovies = responseJson.results.map(movie => {
-                    <MovieCard />
+            .then((json) => {
+                let movies = json.results.map(movie => {
+                    return (<MovieCard key={movie.id} name={movie.title} overview={movie.overview} imgUrl={movie.backdrop_path}/>);
+                });
+                this.setState({
+                    movies: movies
                 });
             })
             .catch((error) =>{
