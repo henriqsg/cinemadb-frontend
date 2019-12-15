@@ -6,9 +6,9 @@
     font-size: 14px;
 }
 
-img.image {
+img.list-image {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 22em;
 }
