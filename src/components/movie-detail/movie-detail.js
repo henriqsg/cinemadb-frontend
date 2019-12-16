@@ -16,7 +16,7 @@ export default class MovieDetail extends React.Component {
             .then((response) => response.json())
             .then((movie) => {
                 let details = 
-                <div>
+                <div className="row">
                     <div className="detailContainer title col-12 mb-5">
                         <h1>{movie.title}</h1>
                     </div>
@@ -42,7 +42,7 @@ export default class MovieDetail extends React.Component {
 
     render() {
         return (
-            <div className="row">{this.state.details}</div>
+            this.state.details
         );
     }
 }
