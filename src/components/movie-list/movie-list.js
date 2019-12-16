@@ -15,7 +15,7 @@ export default class MovieList extends React.Component {
             .then((response) => response.json())
             .then((json) => {
                 let movies = json.results.map(movie => {
-                    return (<MovieCard key={movie.id} title={movie.title} overview={movie.overview} imgUrl={movie.backdrop_path}/>);
+                    return (<MovieCard key={movie.id} id={movie.id} title={movie.title} overview={movie.overview} imgUrl={movie.backdrop_path}/>);
                 });
                 this.setState({
                     movies: movies
